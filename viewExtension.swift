@@ -14,5 +14,15 @@ extension UIView {
         mask.path = path.cgPath
         layer.mask = mask
     }
+    
+    func setBackgroundColor(Hex: String)
+    {
+        self.backgroundColor = UIColor.init(hex: Hex)
+    }
+    
+    func roundCorner()
+    {
+        self.layer.cornerRadius = self.layer.frame.width / 2
+    }
 }
 
